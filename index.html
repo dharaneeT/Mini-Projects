@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Doppio+One&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="navigation">
+      <nav>
+        <ul>
+          <li class="logo">Task Manager</li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li class="sign-in"><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+    </section>
+    <main>
+      <section class="head">
+        <h1 class="main-title">Task Manager</h1>
+        <div class="container">
+          <div class="form-container">
+            <form>
+              <label for="username">Task:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter Your Task"
+              />
+              <label for="priority">Priority:</label>
+              <input
+                type="text"
+                id="priority"
+                name="priority"
+                placeholder="Priority of Your Task"
+              />
+              <label for="date">Due:</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="dd/mm/yyyy"
+              />
+              <button class="btn add-btn">Add</button>
+            </form>
+          </div>
+        </div>
+        <section class="card">
+          <div class="inner-task-container">
+            <div class="grid-container">
+              <div class="card-container">
+                <div class="card-content">
+                  <h2>Task 1</h2>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <button class="btn toggle-btn">toggle</button>
+                  <button class="btn dlt-btn">Delete</button>
+                </div>
+              </div>
+              <div class="card-container">
+                <div class="card-content">
+                  <h2>Task 1</h2>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <button class="btn toggle-btn">toggle</button>
+                  <button class="btn dlt-btn">Delete</button>
+                </div>
+              </div>
+              <!-- <div class="card-container">
+                <div class="card-content">
+                  <h2>Task 1</h2>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <button class="btn toggle-btn">toggle</button>
+                  <button class="btn dlt-btn">Delete</button>
+                </div>
+              </div>
+            --></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
