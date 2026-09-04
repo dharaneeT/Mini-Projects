@@ -27,6 +27,9 @@ body {
   background: linear-gradient(135deg, #000000 0%, #000b18 50%, #0052d4 100%);
 }
 
+.hidden {
+  display: none;
+}
 /* Navigation */
 .navigation ul {
   margin-top: 1.4rem;
@@ -96,23 +99,14 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 2rem;
-  min-height: 80rem;
+  min-height: 50rem;
   max-width: 80rem;
   padding: 2rem;
 }
 
 .card-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row; */
-
-  background-color: #000000;
   max-width: 25rem;
   min-height: 20rem;
-  padding: 1rem;
-  border-radius: 2rem;
-  background-color:;
 }
 
 .grid-container {
@@ -123,7 +117,19 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
   gap: 1rem;
+  padding: 1rem;
+}
+
+.low {
+  background-color: #0052d4;
+}
+.high {
+  background-color: rgb(0, 0, 0);
+}
+.complete {
+  background-color: rgb(25, 185, 73);
 }
 
 .card-content h2,
@@ -135,6 +141,12 @@ p {
 
 .card-content p {
   margin-bottom: 2rem;
+}
+.card-content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
 
 .btn {
@@ -152,7 +164,10 @@ p {
   background-color: var(--primary-shade);
   color: var(--txt-clr);
 }
-
+.low-btn {
+  background-color: #000000;
+  color: var(--txt-clr);
+}
 .toggle-btn:hover {
   background-color: #3730a3;
   transform: translateY(-2px);
@@ -172,6 +187,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 .form-container {
@@ -189,7 +205,8 @@ label {
   color: rgb(0, 171, 233);
 }
 
-input {
+input,
+select {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -208,8 +225,8 @@ input:focus {
 }
 
 .add-btn:hover {
-  color: var(--primary-shade);
-  background-color: #000000;
+  color: var(--txt-clr);
+  background-color: #3730a3;
   transform: scale(1.2);
   transform: translateY(-2px);
 }

@@ -32,20 +32,20 @@
             <form>
               <label for="username">Task:</label>
               <input
+                class="task-input"
                 type="text"
                 id="username"
                 name="username"
                 placeholder="Enter Your Task"
               />
               <label for="priority">Priority:</label>
-              <input
-                type="text"
-                id="priority"
-                name="priority"
-                placeholder="Priority of Your Task"
-              />
+              <select id="priority" class="priority-options" name="priority">
+                <option value="low">Low</option>
+                <option value="high">High</option>
+              </select>
               <label for="date">Due:</label>
               <input
+                class="date-input"
                 type="date"
                 name="date"
                 id="date"
@@ -56,33 +56,17 @@
           </div>
         </div>
         <section class="card">
-          <div class="inner-task-container">
+          <div class="inner-task-container hidden">
             <div class="grid-container">
               <div class="card-container">
-                <div class="card-content">
+                <!--  <div class="card-content">
                   <h2>Task 1</h2>
                   <p>Lorem ipsum dolor sit.</p>
                   <button class="btn toggle-btn">toggle</button>
                   <button class="btn dlt-btn">Delete</button>
-                </div>
+                </div>-->
               </div>
-              <div class="card-container">
-                <div class="card-content">
-                  <h2>Task 1</h2>
-                  <p>Lorem ipsum dolor sit.</p>
-                  <button class="btn toggle-btn">toggle</button>
-                  <button class="btn dlt-btn">Delete</button>
-                </div>
-              </div>
-              <!-- <div class="card-container">
-                <div class="card-content">
-                  <h2>Task 1</h2>
-                  <p>Lorem ipsum dolor sit.</p>
-                  <button class="btn toggle-btn">toggle</button>
-                  <button class="btn dlt-btn">Delete</button>
-                </div>
-              </div>
-            --></div>
+            </div>
           </div>
         </section>
       </section>
